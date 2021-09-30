@@ -6,7 +6,7 @@ import unittest
 
 class RoomTest(unittest.TestCase):
 
-  def test_room_has_at_least_four_rooms(self):
+  def test_room_has_at_least_four_walls(self):
     room = Room([Wall(),Wall(), Wall(),Wall()])
     self.assertGreaterEqual(len(room.walls), 4)
 
