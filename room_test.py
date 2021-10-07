@@ -19,12 +19,8 @@ class RoomTest(unittest.TestCase):
     self.assertTrue(hasDoor)
 
   def test_error_raised_when_not_enough_walls(self):
-    room = Room([Wall(0),Wall(0), Wall(1),Wall(0)])
-    hasDoor = False
-    for wall in room.walls:
-      if wall.nbDoors > 0:
-        hasDoor = True
-    self.assertTrue(hasDoor)
+    with self.assertRaises(AssertionError):
+      Room([Wall(0),Wall(0), Wall(1)])
 
   if __name__ =='__main__':
     pass
