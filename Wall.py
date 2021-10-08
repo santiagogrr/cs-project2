@@ -1,4 +1,5 @@
 class Wall(object):
+  #TODO : change this! This is static!!!
   n: int
   nbDoors: int
   x: int
