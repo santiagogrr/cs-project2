@@ -6,6 +6,10 @@ composition : when building destroyed, area & elements deleted.
 
 wall inherits the class element.
 
+Coordinate
+* to implement
+
+
 Area : room, patio, corridor
 
 room
@@ -16,13 +20,14 @@ room
 * overlapping coordinates between walls of an area or walls of a building (except if same wall)
 * weird coordinates
 
-Building
+Element
 
-* at least one floor
-* .
+* Needs coordinates (x, y)
+* coordinates are different per element
 
 Area
 
+* Needs coordinates
 * Needs a unique floor
 * At least one wall
 * At least one door
@@ -46,7 +51,9 @@ Floor
 * can have multiple areas
 * needs at least one area
 
+
 Building
 
+* at least one floor
 * a floor is created first, then added to building. When added, it is assigned a number (starting from 0).
 * (later) ability to change number of floor, and delete a floor.
