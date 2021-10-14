@@ -24,5 +24,7 @@ class wall_test(unittest.TestCase):
         with self.assertRaises(AssertionError):
             Wall([(0,1)])
     
+    #???
+    
     if __name__ =='__main__':
         pass

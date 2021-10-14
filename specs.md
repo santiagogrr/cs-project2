@@ -37,7 +37,7 @@ Patios
 
 Corridor
 
-* .
+* Inherits Room.
 
 Floor
 
@@ -47,5 +47,6 @@ Floor
 * needs at least one area
 
 Building
+
 * a floor is created first, then added to building. When added, it is assigned a number (starting from 0).
 * (later) ability to change number of floor, and delete a floor.

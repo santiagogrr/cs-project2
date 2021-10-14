@@ -1,4 +1,5 @@
 from Wall import Wall
+from Door import Door
 from typing import List
 
 
