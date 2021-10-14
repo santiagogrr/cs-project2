@@ -45,3 +45,7 @@ Floor
 * belongs to one building
 * can have multiple areas
 * needs at least one area
+
+Building
+* a floor is created first, then added to building. When added, it is assigned a number (starting from 0).
+* (later) ability to change number of floor, and delete a floor.
