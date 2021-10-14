@@ -11,14 +11,13 @@ Area : room, patio, corridor
 room
 
 * ~~has at least four walls.~~
-* ~~at least one wall has at least one door~~ 
+* ~~at least one wall has at least one door~~
 * coordinates : two coordinates
 * overlapping coordinates between walls of an area or walls of a building (except if same wall)
 * weird coordinates
 
 Building
 
-* at least one Area
 * at least one floor
 * .
 
@@ -38,11 +37,11 @@ Patios
 
 Corridor
 
-* l
+* .
 
 Floor
 
-* needs a unique number.
-* belongs to one building (necessary?)
+* needs a unique number (maybe implement )
+* belongs to one building
 * can have multiple areas
 * needs at least one area
