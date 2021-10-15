@@ -10,9 +10,10 @@ class floor_test(unittest.TestCase):
         self.assertGreaterEqual(floor.nb_area, 1)
 
     def test_each_floor_has_unique_number(self):
-        pass
+        AssertTrue(False)
 
     def test_new_building_floors_start_at_0(self):
-        pass
+        AssertTrue(False)
+
     if __name__ =='__main__':
         pass

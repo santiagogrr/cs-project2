@@ -5,10 +5,13 @@ import unittest
 
 class area_test(unittest.TestCase):
 
-  def test_unique_floor_ok(self):
+    def test_unique_floor_ok(self):
         Area()
+    
+    def test_error_when_no_unique_floor(self):
+        AssertTrue(False)
 
 
 
-  if __name__ =='__main__':
-    pass
+    if __name__ =='__main__':
+        pass
