@@ -1,4 +1,5 @@
 from Area import Area
+from Floor import Floor
 from typing import List
 import unittest
 
@@ -6,10 +7,13 @@ import unittest
 class area_test(unittest.TestCase):
 
     def test_unique_floor_ok(self):
-        Area()
+        Area(Floor())
     
     def test_error_when_no_unique_floor(self):
-        AssertTrue(False)
+        floor1 = Floor()
+        floor2 = Floor()
+        with self.assertRaises(AssertionError):
+            Area(floor=[floor1, floor2])
 
 
 
