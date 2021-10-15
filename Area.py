@@ -9,4 +9,9 @@ class Area(object):
         assert(isinstance(floor, Floor)), "The floor parameter must be a Floor object."
         assert(isinstance(wall, list)), "The wall parameter must be a list."
         self.nbWalls = len(wall)
-        assert(self.nbWalls > 0), "There must be at least one wall in the Area."
+        self.walls = wall
+        assert(self.nbWalls > 0), "There must be at least one Wall in the Area."
+        nbdoors = 0
+        for w in self.walls:
+            nbdoors += w.nbDoors
+        assert(nbdoors > 0), "There must be at least one Wall with at least one Door in the Area."

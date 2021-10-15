@@ -29,12 +29,12 @@ Area
 
 * Needs coordinates
 * Needs a unique floor
-* At least one wall
-* At least one door
+* ~~At least one wall~~
+* ~~At least one door~~
 * super().function(self)
 
 * one coordinate should be shared with only one other wall in the area.
-* walls should only overlap in coordinates (nowhere else)
+* walls should only overlap in one coordinate (nowhere else)
 
 Patios
 
