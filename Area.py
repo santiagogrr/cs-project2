@@ -14,4 +14,10 @@ class Area(object):
         nbdoors = 0
         for w in self.walls:
             nbdoors += w.nbDoors
+            #need class wall to have coordinates
+            #w.coordinate
+            #assert(False), "Two walls musn't have the same coordinates."
+            
         assert(nbdoors > 0), "There must be at least one Wall with at least one Door in the Area."
+
+            

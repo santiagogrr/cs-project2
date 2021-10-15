@@ -19,6 +19,7 @@ room
 * coordinates : two coordinates
 * overlapping coordinates between walls of an area or walls of a building (except if same wall)
 * weird coordinates
+* each wall must touch two others (one shared coordinate, and not the same two)
 
 Element
 
@@ -28,7 +29,7 @@ Element
 Area
 
 * Needs coordinates
-* Needs a unique floor
+* ~~Needs a unique floor (test when no floors)
 * ~~At least one wall~~
 * ~~At least one door~~
 * super().function(self)
@@ -50,6 +51,7 @@ Floor
 * belongs to one building
 * can have multiple areas
 * needs at least one area
+* one area must touch another if there is more than one area.
 
 
 Building

@@ -39,5 +39,9 @@ class area_test(unittest.TestCase):
         with self.assertRaises(AssertionError):
             mock_area(floor=Floor(), wall=[Wall([(0,1), (0,2)], [])])
 
+    #def test_error_when_two_walls_of_area_have_same_coordinates(self):
+    #    with self.assertRaises(AssertionError):
+    #        mock_area(floor=Floor(), wall=[Wall([(0,1), (0,2)], [Door()]), Wall([(0,1), (0,2)])])
+
     if __name__ =='__main__':
         pass

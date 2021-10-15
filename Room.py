@@ -1,9 +1,9 @@
 from Wall import Wall
 from Door import Door
 from typing import List
+from Area import *
 
-
-class Room(object):
+class Room(Area):
   
   def __init__(self, walls):
     self.walls = walls
