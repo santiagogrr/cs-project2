@@ -25,6 +25,8 @@ class wall_test(unittest.TestCase):
             Wall([(0,1)])
     
     #???
+
+    def test_door_between_coordinates_of_wall
     
     if __name__ =='__main__':
         pass

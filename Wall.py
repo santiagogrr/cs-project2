@@ -1,4 +1,5 @@
 from Door import Door
+from Coordinate import *
 class Wall(object):
   
   
@@ -10,5 +11,3 @@ class Wall(object):
     assert len(list_of_coordinates[1]) == 2 and isinstance(list_of_coordinates[1], tuple), 'Second coordinate must be a tuple'
     self.door_list = door_list
     self.nbDoors = len(door_list)
-    #if implemented, uncomment this:
-    #self.nbDoors = len(door_list)

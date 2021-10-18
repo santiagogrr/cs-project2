@@ -3,6 +3,7 @@ from Floor import Floor
 from Wall import Wall
 from Door import Door
 from typing import List
+from Coordinate import *
 import unittest
 
 class mock_area(Area):
@@ -12,7 +13,7 @@ class mock_area(Area):
 class area_test(unittest.TestCase):
 
     def test_unique_floor_ok(self):
-        Area(Floor(), wall=[Wall([(0,1), (0,2)], [Door()])])
+        Area(Floor(), wall=[Wall([(0,1), (0,2)], [Door(Coordinate([(0, 0)]))])])
     
     def test_error_when_no_unique_floor(self):
         floor1 = Floor()
@@ -21,7 +22,7 @@ class area_test(unittest.TestCase):
             Area(floor=[floor1, floor2])
 
     def test_area_one_wall_ok(self):
-        area = mock_area(floor=Floor(), wall=[Wall([(0,1), (0,2)], [Door()])])
+        area = mock_area(floor=Floor(), wall=[Wall([(0,1), (0,2)], [Door(Coordinate([(0, 0)]))])])
         self.assertTrue(area.nbWalls == 1)
 
     def test_area_no_wall_error(self):
@@ -29,7 +30,7 @@ class area_test(unittest.TestCase):
             area = mock_area(floor=Floor())
     
     def test_area_one_door_ok(self):
-        area = mock_area(floor=Floor(), wall=[Wall([(0,1), (0,2)], [Door()])])
+        area = mock_area(floor=Floor(), wall=[Wall([(0,1), (0,2)], [Door(Coordinate([(0, 0)]))])])
         nbdoors = 0
         for w in area.walls:
             nbdoors += w.nbDoors 
