@@ -25,7 +25,7 @@ room
 Element
 
 * Needs coordinates (x, y)
-* coordinates are different per element
+* coordinates are different per element (2 for wall, 1 for door)
 
 Area
 
@@ -38,9 +38,11 @@ Area
 * one coordinate should be shared with only one other wall in the area.
 * walls should only overlap in one coordinate (nowhere else)
 
+
 Patios
 
-* doesn't need four walls
+* doesn't need four walls (but can have)
+* Needs coordinates (because not delimited by walls)
 
 Corridor
 
@@ -69,3 +71,9 @@ Building
 * at least one floor
 * a floor is created first, then added to building. When added, it is assigned a number (starting from 0).
 * (later) ability to change number of floor, and delete a floor.
+
+
+Map 
+
+* When representation
+* Main class to plot.
