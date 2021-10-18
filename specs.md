@@ -54,6 +54,15 @@ Floor
 * needs at least one area
 * one area must touch another if there is more than one area.
 
+Door
+
+* Needs only one coordinate
+
+Wall
+
+* ~~Needs only two coordinates~~
+* If there's a door, its coordinates must be between the coordinates of the wall.
+
 
 Building
 
