@@ -7,7 +7,8 @@ composition : when building destroyed, area & elements deleted.
 wall inherits the class element.
 
 Coordinate
-* to implement
+* attribute : list of 2-tuples (assert all of that)
+* no two tuples are the same
 
 
 Area : room, patio, corridor
